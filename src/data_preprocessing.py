@@ -3,12 +3,13 @@ import sys
 import pandas as pd 
 import numpy as np
 import joblib
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+
 from src.logger import get_logger
 from src.custom_exception import CustomException
 from utils.common_function import read_yaml , load_data
-from config.path_config import * 
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
+from config.path_config import *
 
 
 logger = get_logger(__name__)
